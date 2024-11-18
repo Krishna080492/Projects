@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 60px 0;
+    background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
+}
+
+.title h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    color: #345676;
+    letter-spacing: 1px;
+}
+
+.title h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background: #d43076;
+    bottom: 0;
+    left: 0;
+}
+
+/* main background start */
+.mainbg {
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    width: 100%;
+    height: 80vh;
+    margin-right: 25px;
+}
+
+#home .btn:hover {
+    transform: translateY(20px);
+    transition: 0.5s linear;
+}
+
+#home .bi-chevron-double-down:hover {
+    color: #d43076;
+}
+
+/* main background end */
+/* header start */
+
+#mainmenu a {
+    font-size: 16px;
+    color: #2c4964;
+}
+
+#mainmenu a:hover {
+    color: #d43076;
+}
+
+/* header end */
+/* about start */
+.about {
+    margin-bottom: 20px;
+}
+
+.abtcontent h3 {
+    font-size: 30px;
+    color: #2c4964;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.abtcontent p {
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: 1.2px;
+    padding-left: 20px;
+    color: #5a656e;
+    font-weight: 200;
+}
+
+.abticon {
+    padding-left: 20px;
+    width: 100%;
+}
+
+.abticon .bi {
+    font-size: 35px;
+    color: #eeafca;
+}
+
+.abticon span {
+    font-size: 35px;
+    color: #2c4964;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.abticon p {
+    color: #437099;
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+/* about end */
+/* skill start */
+.skill {
+    margin-bottom: 20px;
+}
+
+.skillprogress {
+    height: 50px;
+    display: block;
+    background: none;
+}
+
+.skillprogress span {
+    color: #2c4964;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 0;
+    margin: 8px;
+}
+
+.skillprogress p {
+    color: #2c4964;
+    font-weight: 600;
+    font-size: 15px;
+    float: right;
+}
+
+/* skill end */
+/* skill start */
+.resume {
+    margin-bottom: 20px;
+}
+
+.resumetitle {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #4b7dab;
+    font-family: "Poppins", sans-serif;
+}
+
+.resumeitem {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #d43076;
+    position: relative;
+}
+
+.resumeitem::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #d43076;
+}
+
+/* resume end */
+/* service start */
+.service {
+    margin-bottom: 20px;
+}
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    background-color: #d43076;
+    color: #fff;
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+}
+
+.card:hover .overlay {
+    height: 100%;
+    bottom: 0;
+}
+.card:hover .cardicon .bi{
+    background-color: #fff;
+    color: #d43076;
+}
+
+.cardicon .bi {
+    padding-top: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #d43076;
+}
+
+/* service end */
+/* portfolio start */
+.portfolio {
+    margin-bottom: 20px;
+}
+
+.portfolioimg {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.portfolioimg::before {
+    content: "";
+    background: rgba(25, 37, 49, 0.6);
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    top: 40px;
+    bottom: 40px;
+    opacity: 0;
+}
+
+.portfolioimg:hover:before {
+    transform: scale(1.5);
+    transition: 0.3s linear;
+    opacity: 1;
+    z-index: 2;
+}
+
+.portfolioinfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+}
+
+.portfolioimg:hover .portfolioinfo {
+    transform: translateY(80px);
+    transition: 0.3s linear;
+    opacity: 1;
+    color: #eee;
+    z-index: 3;
+}
+
+.portfoliolink {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+}
+
+.portfolioimg:hover .portfoliolink {
+    transform: translateY(-20px);
+    transition: 0.3s linear;
+    opacity: 1;
+    color: #eee;
+    z-index: 3;
+}
+
+/* portfolio end */
+/* testimonial start */
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.testimg img {
+    right: 0; */
+    margin-top: -40px;
+    width: 100px;
+    border: 8px solid #fff;
+}
+
+.testimg h5 {
+    margin-top: 3px;
+}
+
+.testimg p {
+    margin-top: 10px;
+}
+
+/* testimonial end */
+/* contact start */
+.contact {
+    margin-bottom: 20px;
+}
+
+.left h1 {
+    color: #d43076;
+}
+
+.contactsocial .bi {
+    color: #d43076;
+    font-size: 18px;
+    border: 1px solid #d43076;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    padding: 6px 8px;
+    text-align: center;
+}
+
+.contactsocial .bi:hover {
+    background-color: #d43076;
+    color: #fff;
+}
+
+.text-center .btn {
+    background-color: #d43076;
+    color: #eee;
+    padding: 8px 20px;
+    font-size: 18px;
+}
+
+.text-center .btn:hover {
+    background-color: #f774ad;
+    color: #eee;
+}
+
+/* contact end */
+/* footer start */
+.footer {
+    box-shadow: 0px 0 20px 0 rgba(0, 0, 0, 0.12);
+    background: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+/* footer end */
+.topbtn {
+    font-size: 20px;
+    color: #fff;
+    background-color: #d43076;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 5px 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+}
+
+.topbtn:hover {
+    background-color: #f774ad;
+    color: #eee;
+}

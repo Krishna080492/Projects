@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books Database</title>
+  <!-- remixicon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <!-- header -->
+    <nav class="navbar navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="https://cdn-icons-png.flaticon.com/512/31/31635.png" style="height: 50px; width: 50px;">
+          <b>Bookstore</b>
+        </a>
+        <ul class="nav justify-content-end text-black" style="font-weight: bold; text-decoration: none;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/" style="color:hotpink;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="show">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="edit">Edit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="ri-search-line"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- search -->
+    <div
+      style="background: linear-gradient(to right, rgba(238,174,202,1) 0%, rgb(185, 211, 240) 100%); padding: 30px 60px; border-radius: 20px 20px 0px 0px;">
+      <h3>Find the book</h3>
+      <h2>you've been looking for</h2>
+      <div class="d-flex" style="margin-top: 30px;">
+        <input class="form-control me-2" type="search" placeholder="Search by book title">
+        <button class="btn" type="submit"
+          style="background-color: hotpink; color: black; font-weight: 600;">Search</button>
+      </div>
+    </div>
+    <!-- form -->
+    <div class="container form-container" style="margin-top: 10px;">
+      <div class="row justify-content-center">
+        <div class="col-md-8 ">
+          <div class="card" style="width: 700px;">
+            <div class="card-header fs-4 fw-bold" style="text-align: center; background-color: rgb(255, 199, 227);">
+              Enter Book Details
+            </div>
+            <div class="card-body">
+              <form action="/insertData" method="post" style="font-weight: bold;">
+                <div class="row mb-3">
+                  <label for="inputurl" class="col-sm-2 col-form-label">Url (image): </label>
+                  <div class="col-sm-10">
+                    <input type="url" class="form-control" id="url" name="url" placeholder="Enter Book Image URL">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputtitle" class="col-sm-2 col-form-label">Title : </label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Enter Book Name">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputauthor" class="col-sm-2 col-form-label">Author : </label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="author" name="author" placeholder="Enter Author Name">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputdsc" class="col-sm-2 col-form-label">Description: </label>
+                  <div class="col-sm-10">
+                    <textarea name="dsc" id="dsc" class="form-control" placeholder="Enter Book Description" cols="74"
+                      rows="4"></textarea>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputprice" class="col-sm-2 col-form-label">Price : </label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="price" name="price" placeholder="Enter Book Price">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputprice" class="col-sm-2 col-form-label"></label>
+                  <div class="col-sm-10">
+                    <input type="submit" value="Submit" class="btn"
+                      style="background-color: hotpink; color: black; font-weight: 600;">
+                      <p class="mt-2">Note : Submited Data can be see on cart page</p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- footer -->
+<footer class="footer mt-5">
+  <div class="container"can style="background: linear-gradient(to right, rgba(238,174,202,1) 0%, rgb(185, 211, 240) 100%); padding: 30px 60px; border-radius: 20px 20px 0px 0px;">
+    <p class="mb-0" style="font-weight: 700; margin-left: 20px;">435 Tresdale Road,<br> Entertainment District, <br>Fictional City, XA 27402</p>
+  </div>
+</footer>
+
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

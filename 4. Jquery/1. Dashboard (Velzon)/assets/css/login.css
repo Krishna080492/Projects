@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.w-6 {
+    width: 50%;
+}
+.mb-5{
+    margin-bottom: 15px;
+}
+.f-right{
+    float: right;
+}
+.login {
+    background-image: url('../images/login/chart2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+form {
+    border: 1px solid #f1f1f1;
+    backdrop-filter: blur(50px);
+    padding: 40px;
+    margin-top: 250px;
+    color: white;
+}
+.user-img{
+    text-align: center;
+}
+.user-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+label{
+    font-size: 18px;
+}
+input[type=submit]{
+    width:40%;
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    font-weight: 500;
+}

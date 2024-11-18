@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.atm {
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+h2 {
+  padding: 20px;
+  color: rgb(6, 107, 107);
+  font-size: 35px;
+}
+
+label {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+input {
+  padding: 10px;
+  font-size: 20px;
+
+}
+
+button {
+  padding: 10px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#output {
+  font-size: 30px;
+  padding: 20px;
+  color: rgb(38, 21, 187);
+  font-weight: 900;
+}

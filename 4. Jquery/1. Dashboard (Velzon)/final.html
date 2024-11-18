@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Velzon - Admin & Dashboard Templets</title>
+  <!-- Map Resources -->
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/continentsLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  <!-- favicon -->
+  <link rel="icon" href="assets/images/logo/logo-sm.png">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <!-- remixicon -->
+  <link rel="stylesheet" href="assets/fonts/remixicon/remixicon.css" />
+  <!-- google fonts -->
+  <link rel="stylesheet" href="assets/fonts/Poppins/stylesheet.css" />
+  <!-- media css -->
+  <link rel="stylesheet" href="assets/css/media.css">
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="header d-flex flex-wrap justify-space-between align-item-center">
+    <div class="left-head d-flex flex-wrap">
+      <div class="head-icon  ">
+        <i class="ri-menu-2-line"></i>
+        <i class="ri-arrow-right-line d-none"></i>
+      </div>
+      <div class="head-search d-inline-block">
+        <input type="search" class="search" placeholder="Search..." />
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+      </div>
+    </div>
+    <div class="head-right d-flex flex-wrap align-item-center">
+      <a href="javascript:void(0);">
+        <div class="us-svg">
+          <img src="assets/images/flag svg/us.svg" alt="">
+        </div>
+        <div class="head-right-dropdown d-none">
+          <a href="javascript:void(0);" class="">
+            <img src="assets/images/flag svg/us.svg" alt="">
+            <span class="">English</span></a>
+          <a href="javascript:void(0);" class="d-block">
+            <img src="assets/images/flag svg/spain.svg" alt="">
+            <span class="">Spain</span></a>
+          <a href="javascript:void(0);" class="d-block">
+            <img src="assets/images/flag svg/germany.svg" alt="">
+            <span class="">Deutsche</span></a>
+          <a href="javascript:void(0);" class="d-block">
+            <img src="assets/images/flag svg/italy.svg" alt="">
+            <span class="">Italiana</span></a>
+          <a href="javascript:void(0);" class="d-block">
+            <img src="assets/images/flag svg/russia.svg" alt="">
+            <span class="">Pyccnn</span></a>
+          <a href="javascript:void(0);" class="d-block">
+            <img src="assets/images/flag svg/french.svg" alt="">
+            <span class="">Francais</span></a>
+          <a href="javascript:void(0);" class="d-block">
+            <img src="assets/images/flag svg/ae.svg" alt="">
+            <span class="">Arabic</span></a>
+        </div>
+      </a>
+
+      <div class="layout d-flex flex-wrap align-item-center">
+        <a href="javascript:void(0);">
+          <i class="ri-function-line"></i>
+        </a>
+        <div class="head-right-dropdown1 d-none">
+          <div class="border-bottom">
+            <div class="d-flex flex-wrap align-item-center justify-space-between">
+              <h4>Web Apps</h4>
+              <a href="javascript:void(0);" class="l1">View All Apps</a>
+            </div>
+          </div>
+          <div class="row d-flex flex-wrap align-item-center justify-space-between">
+            <div class="w-4">
+              <a href="javascript:void(0);" class="head-right-dropdown1-icon">
+                <img src="assets/images/apps/github.png" alt="">
+                <span class="d-block">GitHub</span></a>
+            </div>
+            <div class="w-4">
+              <a href="javascript:void(0);" class="head-right-dropdown1-icon">
+                <img src="assets/images/apps/bitbucket.png" alt="">
+                <span class="d-block">Bitbucket</span></a>
+            </div>
+            <div class="w-4">
+              <a href="javascript:void(0);" class="head-right-dropdown1-icon">
+                <img src="assets/images/apps/dribbble.png" alt="">
+                <span class="d-block">Dribble</span></a>
+            </div>
+            <div class="w-4">
+              <a href="javascript:void(0);" class="head-right-dropdown1-icon">
+                <img src="assets/images/apps/dropbox.png" alt="">
+                <span class="d-block">Dropbox</span></a>
+            </div>
+            <div class="w-4">
+              <a href="javascript:void(0);" class="head-right-dropdown1-icon">
+                <img src="assets/images/apps/mail_chimp.png" alt="">
+                <span class="d-block">Mail Chimp</span></a>
+            </div>
+            <div class="w-4">
+              <a href="javascript:void(0);" class="head-right-dropdown1-icon">
+                <img src="assets/images/apps/slack.png" alt="">
+                <span class="d-block">Slack</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shopping-bag">
+        <a href="javascript:void(0);">
+          <i class="ri-shopping-bag-line"></i>
+          <h6 class="shopping-num">5</h6>
+        </a>
+        <div class="head-right-dropdown2 d-none">
+          <div class="border-bottom">
+            <div class="row d-flex flex-wrap align-item-center justify-space-between">
+              <div class="w-6">
+                <h4>My Cart</h4>
+              </div>
+              <div class="w-6">
+                <a href="javascript:void(0);" class="bag">5 items</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown2 row d-flex flex-wrap align-item-center">
+            <div class="w-2">
+              <div class="cart-img">
+                <img src="assets/images/cart/img-1.png" alt="">
+              </div>
+            </div>
+            <div class="w-7">
+              <div class="cart-content">
+                <h5><a href="javascript:void(0);">Branded T-shirts</a></h5>
+                <span>Quantity: 10 * $32</span>
+              </div>
+            </div>
+            <div class="w-2">
+              <div class="cart-price text-center">
+                <span>$320</span>
+              </div>
+            </div>
+            <div class="w-1">
+              <div class="cart-close text-center"> <i class="ri-close-line"></i></div>
+            </div>
+          </div>
+          <div class="dropdown2 row d-flex flex-wrap align-item-center">
+            <div class="w-2">
+              <div class="cart-img">
+                <img src="assets/images/cart/img-2.png" alt="">
+              </div>
+            </div>
+            <div class="w-7">
+              <div class="cart-content">
+                <h5><a href="javascript:void(0);">Bentwood Chair</a></h5>
+                <span>Quantity: 5 * $18</span>
+              </div>
+            </div>
+            <div class="w-2">
+              <div class="cart-price text-center">
+                <span>$89</span>
+              </div>
+            </div>
+            <div class="w-1">
+              <div class="cart-close text-center"> <i class="ri-close-line"></i></div>
+            </div>
+          </div>
+          <div class="dropdown2 row d-flex flex-wrap align-item-center">
+            <div class="w-2">
+              <div class="cart-img">
+                <img src="assets/images/cart/img-3.png" alt="">
+              </div>
+            </div>
+            <div class="w-7">
+              <div class="cart-content">
+                <h5><a href="javascript:void(0);">Borosil Paper Cup</a></h5>
+                <span>Quantity: 3 * $250</span>
+              </div>
+            </div>
+            <div class="w-2">
+              <div class="cart-price text-center">
+                <span>$750</span>
+              </div>
+            </div>
+            <div class="w-1">
+              <div class="cart-close text-center"> <i class="ri-close-line"></i></div>
+            </div>
+          </div>
+          <div class="dropdown2 row d-flex flex-wrap align-item-center">
+            <div class="w-2">
+              <div class="cart-img">
+                <img src="assets/images/cart/img-6.png" alt="">
+              </div>
+            </div>
+            <div class="w-7">
+              <div class="cart-content">
+                <h5><a href="javascript:void(0);">Graystyled T-shirt</a></h5>
+                <span>Quantity: 1 * $1250</span>
+              </div>
+            </div>
+            <div class="w-2">
+              <div class="cart-price text-center">
+                <span>$1250</span>
+              </div>
+            </div>
+            <div class="w-1">
+              <div class="cart-close text-center"> <i class="ri-close-line"></i></div>
+            </div>
+          </div>
+          <div class="dropdown2 row d-flex flex-wrap align-item-center">
+            <div class="w-2">
+              <div class="cart-img">
+                <img src="assets/images/cart/img-5.png" alt="">
+              </div>
+            </div>
+            <div class="w-7">
+              <div class="cart-content">
+                <h5><a href="javascript:void(0);">Stillbird Helmet</a></h5>
+                <span>Quantity: 2 * $495</span>
+              </div>
+            </div>
+            <div class="w-2">
+              <div class="cart-price text-center">
+                <span>$990</span>
+              </div>
+            </div>
+            <div class="w-1">
+              <div class="cart-close text-center"> <i class="ri-close-line"></i></div>
+            </div>
+          </div>
+          <div class="dropdown2 row d-flex flex-wrap align-item-center justify-space-between">
+            <div class="w-6">
+              <h4 class="total">Total:</h4>
+            </div>
+            <div class="w-6">
+              <a href="javascript:void(0);" class="amt">$3399</a>
+            </div>
+          </div>
+          <button class="cart-btn">Check Out</button>
+        </div>
+      </div>
+      <div class="fullscreen" id="exampleImage">
+        <i class="ri-fullscreen-fill" id="btnFullscreen"></i>
+        <i class="ri-fullscreen-exit-line d-none"></i>
+      </div>
+      <div class="moon">
+        <i class="ri-moon-line"></i>
+        <i class="ri-sun-line d-none"></i>
+      </div>
+      <div class="bell">
+        <i class="fa-regular fa-bell"></i>
+        <h6 class="bell-num">3</h6>
+      </div>
+      <div class="founder">
+        <button class="btn">
+          <span class="founder-img d-flex flex-wrap align-item-center"><img src="assets/images/users/avatar-1.jpg"
+              alt="">
+            <span class="founder-txt">
+              <span class="founder-name">Anna Adame
+                <span class="position">Founder</span>
+              </span>
+            </span>
+          </span>
+        </button>
+        <div class="founder-dropdown d-none">
+          <a href="javascript:void(0);" class="d-block">
+            <h6 class="">Welcome Anna!</h6>
+          </a>
+          <div class="founder-dropdown-list"> <a href="javascript:void(0);" class="">
+              <i class="fa-solid fa-circle-user"></i> <span class="">Profile</span></a></div>
+          <div class="founder-dropdown-list">
+            <a href="javascript:void(0);" class="">
+              <i class="ri-message-2-line"></i><span class="">Messages</span></a>
+          </div>
+          <div class="founder-dropdown-list">
+            <a href="javascript:void(0);" class="">
+              <i class="fa-solid fa-calendar-check"></i><span class="">Taskboard</span></a>
+          </div>
+          <div class="founder-dropdown-list">
+            <a href="javascript:void(0);" class="">
+              <i class="ri-global-line"></i><span class="">Help</span></a>
+          </div>
+          <div class="drop-border"></div>
+          <div class="founder-dropdown-list">
+            <a href="javascript:void(0);" class="clr">
+              <i class="ri-wallet-3-fill"></i><span class="">Balance:<span class="bal">$5971.67</span></span></a>
+          </div>
+          <div class="founder-dropdown-list">
+            <a href="javascript:void(0);" class="">
+              <i class="ri-settings-5-fill"></i><span class="">Settings</span></a>
+          </div>
+          <div class="founder-dropdown-list">
+            <a href="javascript:void(0);" class="">
+              <i class="ri-lock-line"></i><span class="">Lock Screen</span></a>
+          </div>
+          <div class="founder-dropdown-list">
+            <a href="login.html" class="">
+              <i class="ri-logout-box-r-line"></i><span class="">Logout</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- aside start -->
+  <aside>
+    <div class="logo">
+      <img src="assets/images/logo/logo-light.png" alt="" />
+    </div>
+    <div class="logo-1 d-none">
+      <img src="assets/images/logo/logo-sm.png" alt="" />
+    </div>
+    <div class="sidebar">
+      <div class="side-title">MENU</div>
+      <ul class="nav-menu">
+        <li class="nav-link">
+          <a href="javascript:void(0);"><i class="ri-dashboard-3-line"></i>
+            <span>Dashboards</span>
+            <i class="ri-arrow-up-s-line"></i><i class="ri-arrow-down-s-line d-none"></i></a>
+        </li>
+        <div class="menu-dropdown d-none">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Analytics</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>CRM</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Ecommerce</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Crypto</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Projects</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>/NFT</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Jobs</span></a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+      <ul class="nav-menu">
+        <li class="nav-link">
+          <a href="javascript:void(0);"><i class="ri-apps-2-line"></i>
+            <span>Apps</span>
+            <i class="ri-arrow-up-s-line"></i><i class="ri-arrow-down-s-line d-none"></i></a>
+        </li>
+        <div class="menu-dropdown d-none">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Calendar</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Chats</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Email</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Ecommerce</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Projects</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Tasks</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>CRM</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Crypto</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Invoices</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Support
+                  Tickets</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>NFT
+                  Marketplace</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>File
+                  Manager</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>To Do</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Jobs</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>API Key</span></a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+      <ul class="nav-menu">
+        <li>
+          <a href="javascript:void(0);"><i class="ri-layout-3-line"></i>
+            <span>Layouts</span>
+            <span class="hot">Hot</span></a>
+        </li>
+      </ul>
+      <div class="side-title">PAGES</div>
+      <ul class="nav-menu">
+        <li class="nav-link">
+          <a href="javascript:void(0);"><i class="fa-regular fa-circle-user"></i>
+            <span>Authentication</span>
+            <i class="ri-arrow-up-s-line"></i><i class="ri-arrow-down-s-line d-none"></i></a>
+        </li>
+        <div class="menu-dropdown d-none">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>SignIn</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>SignUp</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Password
+                  Reset</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Password
+                  Create</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Lock
+                  Screen</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Logout</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Success
+                  Messages</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Two Step
+                  Verification</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Errors</span></a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+      <ul class="nav-menu">
+        <li class="nav-link">
+          <a href="javascript:void(0);"><i class="ri-pages-line"></i>
+            <span>Pages</span>
+            <i class="ri-arrow-up-s-line"></i><i class="ri-arrow-down-s-line d-none"></i></a>
+        </li>
+        <div class="menu-dropdown d-none">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Starter</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Profile</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Team</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Timeline</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>FAQs</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Pricing</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Gallery</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i
+                  class="ri-subtract-line"></i><span>Maintainance</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Comming
+                  Soon</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Sitemap</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Search
+                  Results</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Privacy
+                  Policy</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Term &
+                  Conditions</span></a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+      <ul class="nav-menu">
+        <li class="nav-link">
+          <a href="javascript:void(0);"><i class="ri-rocket-line"></i>
+            <span>Landing</span>
+            <i class="ri-arrow-up-s-line"></i><i class="ri-arrow-down-s-line d-none"></i></a>
+        </li>
+        <div class="menu-dropdown d-none">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>One Page</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>NFT
+                  Landing</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Job</span></a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+      <div class="side-title">COMPONENTS</div>
+      <ul class="nav-menu">
+        <li class="nav-link">
+          <a href="javascript:void(0);"><i class="ri-pencil-ruler-2-line"></i>
+            <span>Base UI</span>
+            <i class="ri-arrow-up-s-line"></i><i class="ri-arrow-down-s-line d-none"></i></a>
+        </li>
+        <div class="menu-dropdown d-none">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Alerts</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Badges</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Buttons</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Color</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Cards</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Carousel</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Dropdowns</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Grid </span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Images</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Tabs</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Accordian &
+                  Collapse</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Modals</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Offcanvas</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i
+                  class="ri-subtract-line"></i><span>Placeholders</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Progress</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i
+                  class="ri-subtract-line"></i><span>Notifications</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Media Object
+                </span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Typography</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Lists</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Link</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>General</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Ribbon </span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Utilities</span></a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+      <ul class="nav-menu">
+        <li class="nav-link">
+          <a href="javascript:void(0);"><i class="ri-stack-line"></i>
+            <span>Advance UI</span>
+            <i class="ri-arrow-up-s-line"></i><i class="ri-arrow-down-s-line d-none"></i></a>
+        </li>
+        <div class="menu-dropdown d-none">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Sweet
+                  Alerts</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Nested
+                  List</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Scrollbar</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Animation</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Tour</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Swiper
+                  Slide</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Ratings</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Highlights</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Scrollspy</span></a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+      <ul class="nav-menu">
+        <li>
+          <a href="javascript:void(0);"><i class="ri-honour-line"></i>
+            <span>Widgets</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav-menu">
+        <li class="nav-link">
+          <a href="javascript:void(0);"><i class="ri-file-list-3-line"></i>
+            <span>Forms</span>
+            <i class="ri-arrow-up-s-line"></i><i class="ri-arrow-down-s-line d-none"></i></a>
+        </li>
+        <div class="menu-dropdown d-none">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Basic
+                  Elements</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Form
+                  Select</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Checkbox &
+                  Radios</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Pickers</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Input
+                  Masks</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Advanced</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Validation</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>File
+                  Uploads</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Form
+                  Layouts</span></a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+
+      <ul class="nav-menu">
+        <li class="nav-link">
+          <a href="javascript:void(0);"><i class="ri-layout-grid-line"></i>
+            <span>Tables</span>
+            <i class="ri-arrow-up-s-line"></i><i class="ri-arrow-down-s-line d-none"></i></a>
+        </li>
+        <div class="menu-dropdown d-none">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Basic
+                  Tables</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Grid Js</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>List Js</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Datatables</span></a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+      <ul class="nav-menu">
+        <li class="nav-link">
+          <a href="javascript:void(0);"><i class="ri-pie-chart-line"></i>
+            <span>Charts</span>
+            <i class="ri-arrow-up-s-line"></i><i class="ri-arrow-down-s-line d-none"></i></a>
+        </li>
+        <div class="menu-dropdown d-none">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Apex
+                  Charts</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Chart Js</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Echarts</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Datatables</span></a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+      <ul class="nav-menu">
+        <li class="nav-link">
+          <a href="javascript:void(0);"><i class="ri-compasses-2-line"></i>
+            <span>Icons</span>
+            <i class="ri-arrow-up-s-line"></i><i class="ri-arrow-down-s-line d-none"></i></a>
+        </li>
+        <div class="menu-dropdown d-none">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Remixicon</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Boxicons</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>MAterial
+                  Design</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Feather</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Crypto SVG</span></a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+      <ul class="nav-menu">
+        <li class="nav-link">
+          <a href="javascript:void(0);"><i class="ri-map-pin-line"></i>
+            <span>Maps</span>
+            <i class="ri-arrow-up-s-line"></i><i class="ri-arrow-down-s-line d-none"></i></a>
+        </li>
+        <div class="menu-dropdown d-none">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Google</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Vector</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Leaflets</span></a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+      <ul class="nav-menu">
+        <li class="nav-link">
+          <a href="javascript:void(0);"><i class="ri-stackshare-line"></i>
+            <span>Multi Level</span>
+            <i class="ri-arrow-up-s-line"></i><i class="ri-arrow-down-s-line d-none"></i></a>
+        </li>
+        <div class="menu-dropdown d-none">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Level 1.1</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0);" class="nav-link"><i class="ri-subtract-line"></i><span>Level 1.2</span></a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </aside>
+  <!-- main start -->
+  <main class="main">
+    <div class="main-top">
+      <div class="main-head d-flex flex-wrap justify-space-between ">
+        <div class="main-head-left ">
+          <h3>Good Morning, Anna!</h3>
+          <p>Here's what's happening with your store today.</p>
+        </div>
+        <div class="input-group d-flex flex-wrap align-item-center">
+          <input type="date" placeholder="01 Jan,2023 to 31 Jan,2023" class="form-control">
+          <button class="btn"><i class="ri-add-circle-line"></i>Add Product</button>
+          <button class="btn"><i class="ri-pulse-line"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="main-bottom">
+      <div class="card">
+        <div class="total-earning">
+          <div class="total-earning-body d-flex flex-wrap justify-space-between align-item-center">
+            <p>TOTAL EARNINGS </p>
+            <i class="ri-arrow-right-up-line"><span>+ 16.24 %</span></i>
+          </div>
+          <h3 class="counter">$<span id="counter1">559.25</span>k</h3>
+          <a href="javascript:void(0);">view net earnings</a>
+          <button class="btn"><i class="ri-money-dollar-circle-line"></i></button>
+        </div>
+        <div class="orders">
+          <div class="orders-body d-flex flex-wrap justify-space-between align-item-center">
+            <p>ORDERS </p>
+            <i class="ri-arrow-right-down-line"><span>- 3.57 %</span></i>
+          </div>
+          <h3 class="counter"><span id="counter2">36894</span></h3>
+          <a href="javascript:void(0);">view net earnings</a>
+          <button class="btn"><i class="ri-shopping-bag-line"></i></button>
+        </div>
+        <div class="customers">
+          <div class="customers-body d-flex flex-wrap justify-space-between align-item-center">
+            <p>CUSTOMERS</p>
+            <i class="ri-arrow-right-down-line"><span>+ 29.08 %</span></i>
+          </div>
+          <h3 class="counter"><span id="counter3">183.35</span>M</h3>
+          <a href="javascript:void(0);">see details</a>
+          <button class="btn"><i class="ri-account-circle-line"></i></button>
+        </div>
+        <div class="balance">
+          <div class="balance-body d-flex flex-wrap justify-space-between align-item-center">
+            <p>MY BALANCE</p>
+            <i class="ri-arrow-right-down-line"><span>+ 29.08 %</span></i>
+          </div>
+          <h3 class="counter">$<span id="counter4">165.89</span>K</h3>
+          <a href="javascript:void(0);">Withdraw money</a>
+          <button class="btn"><i class="ri-wallet-line"></i></button>
+        </div>
+        <div class="revenue">
+          <div class="border">
+            <p class="d-inline-block">Revenue</p>
+            <div class="revenue-btn f-right">
+              <button class="btn">All</button>
+              <button class="btn">1M</button>
+              <button class="btn">6M</button>
+              <button class="btn">1Y</button>
+            </div>
+          </div>
+          <div class="revenue-head">
+            <div class="row d-flex flex-wrap align-item-center text-center">
+              <div class="w-3 ">
+                <a href="javascript:void(0);" class="r-counter"><span id="r-counter1"
+                    class="d-block">7358</span>Orders</a>
+              </div>
+              <div class="w-3">
+                <a href="javascript:void(0);" class="r-counter">$<span id="r-counter2">22.89</span>k<span
+                    class="d-block">Earnings</span></a>
+              </div>
+              <div class="w-3">
+                <a href="javascript:void(0);" class="r-counter"><span id="r-counter3"
+                    class="d-block">369</span>Refunds</a>
+              </div>
+              <div class="w-3">
+                <a href="javascript:void(0);" class="r-counter"><span id="r-counter4">18.92</span>%<span
+                    class="d-block">Conversation Ratio</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="r-chart" id="r-mixed-chart"></div>
+        </div>
+
+        <div class="sales">
+          <div class="border">
+            <p class="d-inline-block">Sales by Location</p>
+            <a href="javascript:void(0);"><button class="btn f-right">Export Report</button></a>
+          </div>
+          <div id="chartdiv"></div>
+          <div class="chart-progress">
+            <p class="d-inline-block">Canada</p><span class="f-right">75%</span>
+            <div class="progress">
+              <div class="progress-bar-75"></div>
+              <p class="d-inline-block">Greenland</p><span class="f-right">47%</span>
+              <div class="progress">
+                <div class="progress-bar-47"></div>
+              </div>
+              <p class="d-inline-block">Russia</p><span class="f-right">82%</span>
+              <div class="progress">
+                <div class="progress-bar-82"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="best-selling">
+          <div class="border">
+            <p class="d-inline-block">Best Selling Products</p>
+            <a href="javascript:void(0);" class="nav-link"><span class="f-right">SORT BY: <span
+                  class="days">Today</span> <i class="ri-arrow-up-s-line"></i>
+                <div class="menu-dropdown5 d-none">
+                  <a href="javascript:void(0);" class="down d-block">Yesterday</a>
+                  <a href="javascript:void(0);" class="down d-block">Last 7 Days</a>
+                  <a href="javascript:void(0);" class="down d-block">Last 30 Days</a>
+                  <a href="javascript:void(0);" class="down d-block">This Month</a>
+                  <a href="javascript:void(0);" class="down d-block">Last Month</a>
+                </div>
+              </span>
+            </a>
+          </div>
+          <div class="table-body">
+            <table>
+              <tbody>
+                <tr class="best-selling-cart">
+                  <td>
+                    <div class="d-flex flex-wrap align-item-center">
+                      <div class="best-selling-cart-img ">
+                        <img src="assets/images/cart/img-1.png" alt="">
+                      </div>
+                      <h5>
+                        <p class="cart-product">Branded T-shirt</p><span>24-Apr-2021</span>
+                      </h5>
+                    </div>
+                  </td>
+                  <td>
+                    <h5>$29.00</h5>
+                    <span>Price</span>
+                  </td>
+                  <td>
+                    <h5>62</h5>
+                    <span>Orders</span>
+                  </td>
+                  <td>
+                    <h5>510</h5>
+                    <span>Stock</span>
+                  </td>
+                  <td>
+                    <h5>$1,789</h5>
+                    <span>Amount</span>
+                  </td>
+                </tr>
+                <tr class="best-selling-cart">
+                  <td>
+                    <div class="d-flex align-item-center flex-wrap ">
+                      <div class="best-selling-cart-img ">
+                        <img src="assets/images/cart/img-2.png" alt="">
+                      </div>
+                      <h5 class="cart-product">
+                        <p>Bentwood Chair</p><span>19-Mar-2021</span>
+                      </h5>
+                    </div>
+                  </td>
+                  <td>
+                    <h5>$85.20</h5>
+                    <span>Price</span>
+                  </td>
+                  <td>
+                    <h5>35</h5>
+                    <span>Orders</span>
+                  </td>
+                  <td>
+                    <h5 class="out-stock">Out of Stock</h5>
+                    <span>Stock</span>
+                  </td>
+                  <td>
+                    <h5>$2982</h5>
+                    <span>Amount</span>
+                  </td>
+                </tr>
+                <tr class="best-selling-cart">
+                  <td>
+                    <div class="d-flex align-item-center flex-wrap ">
+                      <div class="best-selling-cart-img ">
+                        <img src="assets/images/cart/img-3.png" alt="">
+                      </div>
+                      <h5 class="cart-product">
+                        <p>Borocil PaperCup</p><span>19-Mar-2021</span>
+                      </h5>
+                    </div>
+                  </td>
+                  <td>
+                    <h5>$14.00</h5>
+                    <span>Price</span>
+                  </td>
+                  <td>
+                    <h5>80</h5>
+                    <span>Orders</span>
+                  </td>
+                  <td>
+                    <h5>749</h5>
+                    <span>Stock</span>
+                  </td>
+                  <td>
+                    <h5>$1120</h5>
+                    <span>Amount</span>
+                  </td>
+                </tr>
+                <tr class="best-selling-cart">
+                  <td>
+                    <div class="d-flex align-item-center flex-wrap ">
+                      <div class="best-selling-cart-img ">
+                        <img src="assets/images/cart/img-2.png" alt="">
+                      </div>
+                      <h5 class="cart-product">
+                        <p>One Seater Sofa</p><span>11-Feb-2021</span>
+                      </h5>
+                    </div>
+                  </td>
+                  <td>
+                    <h5>$127.50</h5>
+                    <span>Price</span>
+                  </td>
+                  <td>
+                    <h5>56</h5>
+                    <span>Orders</span>
+                  </td>
+                  <td>
+                    <h5 class="out-stock">Out of Stock</h5>
+                    <span>Stock</span>
+                  </td>
+                  <td>
+                    <h5>$7140</h5>
+                    <span>Amount</span>
+                  </td>
+                </tr>
+                <tr class="best-selling-cart">
+                  <td>
+                    <div class="d-flex align-item-center flex-wrap ">
+                      <div class="best-selling-cart-img ">
+                        <img src="assets/images/cart/img-5.png" alt="">
+                      </div>
+                      <h5 class="cart-product">
+                        <p>Stillbird Helmet</p><span>17-Jan-2021</span>
+                      </h5>
+                    </div>
+                  </td>
+                  <td>
+                    <h5>$54.00</h5>
+                    <span>Price</span>
+                  </td>
+                  <td>
+                    <h5>74</h5>
+                    <span>Orders</span>
+                  </td>
+                  <td>
+                    <h5>805</h5>
+                    <span>Stock</span>
+                  </td>
+                  <td>
+                    <h5>$3996</h5>
+                    <span>Amount</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="best-selling-bottom">
+            <span>showing</span>
+            <span class="bold">5</span>
+            <span>of</span>
+            <span class="bold">25</span>
+            <span>Results</span>
+            <div class="pagination d-inline-block f-right">
+              <a href="javascript:void(0);" class="pagin">&laquo;</a>
+              <a href="javascript:void(0);" class="pagin">1</a>
+              <a href="javascript:void(0);" class="pagin-active">2</a>
+              <a href="javascript:void(0);" class="pagin">3</a>
+              <a href="javascript:void(0);" class="pagin">&raquo;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="top-sellers">
+          <div class="border">
+            <p class="d-inline-block">Top-Sellers</p>
+            <a href="javascript:void(0);"><span class="nav-link f-right">Report <i class="ri-arrow-up-s-line"></i>
+                <div class="menu-dropdown6 d-none">
+                  <a href="javascript:void(0);" class="down d-block">Download Report</a>
+                  <a href="javascript:void(0);" class="down d-block">Export</a>
+                  <a href="javascript:void(0);" class="down d-block">Import</a>
+                </div>
+              </span>
+            </a>
+          </div>
+          <div class="table-body">
+            <table>
+              <tbody>
+                <tr class="top-sellers-cart">
+                  <td>
+                    <div class="d-flex flex-wrap align-item-center">
+                      <div class="top-sellers-cart-img ">
+                        <img src="assets/images/companies/img-1.png" alt="">
+                      </div>
+                      <h5>
+                        <p class="top-seller-product">iTest Factory</p><span>Oliver Tyler</span>
+                      </h5>
+                    </div>
+                  </td>
+                  <td><span>Bags & Wallets</span></td>
+                  <td>
+                    <h5>8547</h5>
+                    <span>Stock</span>
+                  </td>
+                  <td>
+                    <h5>$541200</h5>
+                    <span>Orders</span>
+                  </td>
+                  <td>
+                    <h5>32%</h5>
+                  </td>
+                  <td> <span><i class="ri-bar-chart-fill"></i></span></td>
+                </tr>
+                <tr class="top-sellers-cart">
+                  <td>
+                    <div class="d-flex flex-wrap align-item-center">
+                      <div class="top-sellers-cart-img ">
+                        <img src="assets/images/companies/img-2.png" alt="">
+                      </div>
+                      <h5>
+                        <p class="top-seller-product">Digitech Galaxy</p><span>John Roberts</span>
+                      </h5>
+                    </div>
+                  </td>
+                  <td><span>Watches</span></td>
+                  <td>
+                    <h5>895</h5>
+                    <span>Stock</span>
+                  </td>
+                  <td>
+                    <h5>$75030</h5>
+                    <span>Orders</span>
+                  </td>
+                  <td>
+                    <h5>79%</h5>
+                  </td>
+                  <td> <span><i class="ri-bar-chart-fill"></i></span></td>
+                </tr>
+                <tr class="top-sellers-cart">
+                  <td>
+                    <div class="d-flex flex-wrap align-item-center">
+                      <div class="top-sellers-cart-img ">
+                        <img src="assets/images/companies/img-3.png" alt="">
+                      </div>
+                      <h5>
+                        <p class="top-seller-product">Nesta Techno.</p><span>Harley Fuller</span>
+                      </h5>
+                    </div>
+                  </td>
+                  <td><span>Bike Accessories</span></td>
+                  <td>
+                    <h5>3470</h5>
+                    <span>Stock</span>
+                  </td>
+                  <td>
+                    <h5>$45600</h5>
+                    <span>Orders</span>
+                  </td>
+                  <td>
+                    <h5>90%</h5>
+                  </td>
+                  <td><span><i class="ri-bar-chart-fill"></i></span></td>
+                </tr>
+                <tr class="top-sellers-cart">
+                  <td>
+                    <div class="d-flex flex-wrap align-item-center">
+                      <div class="top-sellers-cart-img ">
+                        <img src="assets/images/companies/img-8.png" alt="">
+                      </div>
+                      <h5>
+                        <p class="top-seller-product">Zoetic Fashion</p><span>James Bowen</span>
+                      </h5>
+                    </div>
+                  </td>
+                  <td><span>Clothes</span></td>
+                  <td>
+                    <h5>5488</h5>
+                    <span>Stock</span>
+                  </td>
+                  <td>
+                    <h5>$29456</h5>
+                    <span>Orders</span>
+                  </td>
+                  <td>
+                    <h5>40%</h5>
+                  </td>
+                  <td><span><i class="ri-bar-chart-fill"></i></span></td>
+                </tr>
+                <tr class="top-sellers-cart">
+                  <td>
+                    <div class="d-flex flex-wrap align-item-center">
+                      <div class="top-sellers-cart-img ">
+                        <img src="assets/images/companies/img-5.png" alt="">
+                      </div>
+                      <h5>
+                        <p class="top-seller-product">Meta4Systems</p><span>Zoe Dennis</span>
+                      </h5>
+                    </div>
+                  </td>
+                  <td><span>Furniture</span></td>
+                  <td>
+                    <h5>4100</h5>
+                    <span>Stock</span>
+                  </td>
+                  <td>
+                    <h5>$11260</h5>
+                    <span>Orders</span>
+                  </td>
+                  <td>
+                    <h5>57%</h5>
+                  </td>
+                  <td> <span><i class="ri-bar-chart-fill"></i></span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="top-sellers-bottom">
+            <span>showing</span>
+            <span class="bold">5</span>
+            <span>of</span>
+            <span class="bold">25</span>
+            <span>Results</span>
+            <div class="pagination d-inline-block f-right">
+              <a href="javascript:void(0);" class="pagin">&laquo;</a>
+              <a href="javascript:void(0);" class="pagin">1</a>
+              <a href="javascript:void(0);" class="pagin-active">2</a>
+              <a href="javascript:void(0);" class="pagin">3</a>
+              <a href="javascript:void(0);" class="pagin">&raquo;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="reports">
+          <div class="border">
+            <p class="d-inline-block">Store Visit by Sources</p>
+            <a href="javascript:void(0);"><span class="nav-link f-right">Report <i class="ri-arrow-up-s-line"></i>
+                <div class="menu-dropdown4 d-none">
+                  <a href="javascript:void(0);" class="down d-block">Download Report</a>
+                  <a href="javascript:void(0);" class="down d-block">Import</a>
+                  <a href="javascript:void(0);" class="down d-block">Export</a>
+                </div>
+              </span>
+            </a>
+          </div>
+          <div class="charts" id="reports"></div>
+        </div>
+        <div class="recent-orders">
+          <div class="border">
+            <p class="d-inline-block">Recent-Orders</p>
+            <a href="javascript:void(0);" class="f-right btn"><i class="ri-file-list-3-line"></i>Generate Report</a>
+          </div>
+          <div class="table-body">
+            <table>
+              <thead>
+                <tr>
+                  <th>Order Id</th>
+                  <th>Customer</th>
+                  <th>Product</th>
+                  <th>Amount</th>
+                  <th>Vendor</th>
+                  <th>Status</th>
+                  <th>Rating</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="" class="id"> #VZ2112</a></td>
+                  <td>
+                    <div class="d-flex flex-wrap align-item-center">
+                      <div class="recent-orders-img ">
+                        <img src="assets/images/users/avatar-1.jpg" alt="">
+                      </div>
+                      <div class="recent-orders-users">Alex Smith</div>
+                    </div>
+                  </td>
+                  <td>Clothes</td>
+                  <td class="recent-orders-amt">$109</td>
+                  <td>Zoitic Fashion</td>
+                  <td><span class="paid">paid</span></td>
+                  <td>5.0 <span>(61 votes)</span></td>
+                </tr>
+                <tr>
+                  <td><a href="" class="id"> #VZ2111</a></td>
+                  <td>
+                    <div class="d-flex flex-wrap align-item-center">
+                      <div class="recent-orders-img ">
+                        <img src="assets/images/users/avatar-2.jpg" alt="">
+                      </div>
+                      <div class="recent-orders-users">Jansh Brown</div>
+                    </div>
+                  </td>
+                  <td>Kitchen Storage</td>
+                  <td class="recent-orders-amt">$149.00</td>
+                  <td>Micro Design</td>
+                  <td><span class="pending">Pending</span></td>
+                  <td>4.5 <span>(61 votes)</span></td>
+                </tr>
+                <tr>
+                  <td><a href="" class="id"> #VZ2109</a></td>
+                  <td>
+                    <div class="d-flex flex-wrap align-item-center">
+                      <div class="recent-orders-img ">
+                        <img src="assets/images/users/avatar-3.jpg" alt="">
+                      </div>
+                      <div class="recent-orders-users">Ayaan Bowen</div>
+                    </div>
+                  </td>
+                  <td>Bike Accessories</td>
+                  <td class="recent-orders-amt">$215.00</td>
+                  <td>Nesta Technology</td>
+                  <td><span class="paid">Paid</span></td>
+                  <td>4.9 <span>(89 votes)</span></td>
+                </tr>
+                <tr>
+                  <td><a href="" class="id"> #VZ2108</a></td>
+                  <td>
+                    <div class="d-flex flex-wrap align-item-center">
+                      <div class="recent-orders-img ">
+                        <img src="assets/images/users/avatar-4.jpg" alt="">
+                      </div>
+                      <div class="recent-orders-users">Prezy Mark</div>
+                    </div>
+                  </td>
+                  <td>Furniture</td>
+                  <td class="recent-orders-amt">$199.00</td>
+                  <td>Syntyce Solutions</td>
+                  <td><span class="unpaid">Unpaid</span></td>
+                  <td>4.3 <span>(47 votes)</span></td>
+                </tr>
+                <tr>
+                  <td><a href="" class="id"> #VZ2107</a></td>
+                  <td>
+                    <div class="d-flex flex-wrap align-item-center">
+                      <div class="recent-orders-img">
+                        <img src="assets/images/users/avatar-5.jpg" alt="">
+                      </div>
+                      <div class="recent-orders-users">Vihan Hudda</div>
+                    </div>
+                  </td>
+                  <td>Bags and Wallets</td>
+                  <td class="recent-orders-amt">$330.00</td>
+                  <td>iTest Factory</td>
+                  <td><span class="paid">Paid</span></td>
+                  <td>4.7 <span>(161 votes)</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- top-btn -->
+  <div class="top-btn">
+    <button class="btn" id="button"><i class="ri-arrow-up-line"></i></button>
+  </div>
+  <!-- settings -->
+  <div class="setting-btn">
+    <button class="btn"><i class="fa-solid fa-gear"></i></button>
+  </div>
+  <!-- footer -->
+  <footer class="d-flex flex-wrap justify-space-between">
+    <div class="f-left">
+      2023 @ Velzon
+    </div>
+    <div class="f-right">
+      <p>Design & Develop by Themesbrand</p>
+    </div>
+  </footer>
+
+  <!-- js -->
+  <script src="assets/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- counter js -->
+  <script src="assets/js/counter.js"></script>
+  <!-- apex chart -->
+  <script src="assets/js/apexcharts.js"></script>
+  <script src="assets/js/chart.js"></script>
+  <!-- map js -->
+  <script src="assets/js/map.js"></script>
+</body>
+
+</html>
+
+<!-- Velzon link -->
+<!-- https://themesbrand.com/velzon/html/default/index.html -->
